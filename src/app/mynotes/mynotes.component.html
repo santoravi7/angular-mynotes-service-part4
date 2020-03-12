@@ -1,0 +1,23 @@
+<div>
+  <button (click)="add();" class="add-btn" title="Add Note">+</button>
+</div>
+<div class="container">
+    <div *ngFor="let note of notes; index as noteId">      
+        <div class="parent-card col-md-4 col-xs-6 col-sm-4 col-lg-3">
+          <div class="notes-div" [ngStyle]="{'background-color': note.color}">
+            <div class="intro-heading">
+              <a routerLink="/detail/{{note.id}}"  class="">
+                <h4>{{note.name}}</h4>
+                </a>
+                <button class="delete" title="Delete Note"
+      (click)="delete(note)">x</button>
+            </div>         
+            <a routerLink="/detail/{{note.id}}"  class="">
+              <div class="intro">{{note.description}}</div>    
+            </a>
+          </div>
+        </div>
+      
+     
+    </div>
+</div>

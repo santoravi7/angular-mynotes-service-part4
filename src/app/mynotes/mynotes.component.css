@@ -1,0 +1,76 @@
+.notes-div{
+    margin-top: 20px;
+    background: #efefef;
+    min-height: 270px;    
+    padding: 15px 0px;
+    text-align: center;
+    font-size: 12px !important;
+}
+
+
+.notes-div h4{
+  word-wrap: break-word;
+}
+
+.intro{
+  min-height: 200px;
+  margin-top: 10px;
+  padding: 10px 25px;
+  text-align: left; 
+  font-weight: 400;
+  font-family: lato;
+  font-size: 12px;
+  color: #fff;
+}
+
+.intro-heading{
+  padding-bottom: 10px;
+  border-bottom: 1px solid #efefef;
+  color: #fff;
+  font-family: lato;
+}
+
+.note-desc{
+  display: none;
+}
+
+.add-btn{
+  border: none;
+  border-radius: 50%;
+  font-family: lato;
+  font-size: 28px;
+  padding: 3px 15px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  box-shadow: -1px 2px 12px 0px #848484;
+  background: #1976d2;
+  color: #ffffff;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+h4{
+  font-size: 16px;
+  display: inline;
+}
+
+.notes-div{
+  transition: box-shadow .3s;
+}
+
+.notes-div:hover {
+  box-shadow: 0 2px 35px #d8d8d8;
+}
+
+.delete{
+  border: none;
+  background: none;
+  float: right;
+  margin: 0px;
+  font-family: lato;
+  font-size: 14px;
+  padding: 0px 20px;
+  z-index: 999;
+}

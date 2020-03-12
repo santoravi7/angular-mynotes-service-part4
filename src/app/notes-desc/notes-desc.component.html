@@ -1,0 +1,16 @@
+<div class="container" [ngStyle]="{'background-color': note.color}">
+    <div>
+      <div class="col-md-12 col-xs-12">
+        <div *ngIf="note" >
+          <input class="note-heading" [(ngModel)]='note.name'/>
+          <div class="desc">
+              <textarea [(ngModel)]='note.description'></textarea>
+              <div class="center">
+                <button class="save-btn" (click)="save()">Save</button>
+              </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+</div>
